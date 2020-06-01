@@ -9,7 +9,7 @@ export const Container = styled.ImageBackground`
 `;
 export const Content = styled.SafeAreaView`
   flex: 1;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 `;
 export const Title = styled.Text`
