@@ -1,8 +1,10 @@
 export default Object.freeze({
   colors: {
-    primary: '#FD2E64',
+    primary: '#93D35A',
     white: '#fff',
-    black: '#000',
+    black: '#151412',
     gray: '#B2B2B2',
+    darkText: '#040E2B',
+    transparentGray: 'rgba(255, 255, 255, 0.2)',
   },
 });

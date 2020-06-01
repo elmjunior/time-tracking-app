@@ -1,20 +1,17 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
-import {
-  Container,
-  SignInButton,
-  SignInButtonText,
-  SignUpButton,
-} from './styles';
+import {Container, SignUpButton} from './styles';
+import SignInForm from '../SignInForm';
 
 const Authenticator = () => {
+  const navigation = useNavigation();
   return (
     <Container>
-      <SignInButton>
-        <SignInButtonText>Sign in</SignInButtonText>
-      </SignInButton>
+      <SignInForm />
+
       <SignUpButton
+        onPress={() => navigation.navigate('SignUp')}
         title="create your account"
         accessibilityLabel={'sign up'}
       />
