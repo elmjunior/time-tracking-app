@@ -1,10 +1,18 @@
 import React from 'react';
-import {View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import Main from './screens/Main';
 
-// import { Container } from './styles';
+const Stack = createStackNavigator();
 
 const Navigator = () => {
-  return <View />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator headerMode={null}>
+        <Stack.Screen name="Home" component={Main} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
 export default Navigator;
