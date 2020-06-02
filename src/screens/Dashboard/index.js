@@ -1,16 +1,22 @@
 import React from 'react';
-import {Text} from 'react-native';
 
 import {Container, Content} from './styles';
 import CustomHeader from '../../components/CustomHeader';
-import ProjectsHome from '../../components/ProjectsHome';
+import DashboardBox from '../../components/DashboardBox';
+
+const projects = [
+  {title: 'Lorem ipsum dolor auhd aishd iuah dsiauhd aiuhd'},
+  {title: 'Lorem ipsum dolor'},
+  {title: 'Lorem ipsum dolor'},
+];
 
 const Dashboard = () => {
   return (
     <Container>
       <Content>
         <CustomHeader />
-        <ProjectsHome />
+
+        <DashboardBox title={'Projects'} data={projects} />
       </Content>
     </Container>
   );
