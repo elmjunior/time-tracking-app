@@ -6,6 +6,7 @@ import SignUp from './screens/SignUp';
 import Dashboard from './screens/Dashboard';
 import Projects from './screens/Projects';
 import Project from './screens/Project';
+import TaskDetail from './screens/TaskDetail';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ const Navigator = () => {
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Projects" component={Projects} />
         <Stack.Screen name="Project" component={Project} />
+        <Stack.Screen name="TaskDetail" component={TaskDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );
