@@ -1,7 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
 import {Container, Title, Label} from './styles';
 
 const DashboardTaskItem = ({item}) => {
