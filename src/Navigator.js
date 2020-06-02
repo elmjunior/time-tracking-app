@@ -5,6 +5,7 @@ import Main from './screens/Main';
 import SignUp from './screens/SignUp';
 import Dashboard from './screens/Dashboard';
 import Projects from './screens/Projects';
+import Project from './screens/Project';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ const Navigator = () => {
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Projects" component={Projects} />
+        <Stack.Screen name="Project" component={Project} />
       </Stack.Navigator>
     </NavigationContainer>
   );

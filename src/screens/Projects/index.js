@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Content, FlatList} from './styles';
+import {Container, FlatList} from './styles';
 import CustomHeader from '../../components/CustomHeader';
 import ProjectListItem from '../../components/ProjectListItem';
 
@@ -14,15 +14,13 @@ const projects = [
 const Projects = () => {
   return (
     <Container>
-      <Content>
-        <CustomHeader back title={'My Projects'} />
-        <FlatList
-          numColumns={2}
-          data={projects}
-          keyExtractor={(_, key) => key.toString()}
-          renderItem={({item}) => <ProjectListItem project={item} />}
-        />
-      </Content>
+      <CustomHeader back title={'My Projects'} />
+      <FlatList
+        numColumns={2}
+        data={projects}
+        keyExtractor={(_, key) => key.toString()}
+        renderItem={({item}) => <ProjectListItem project={item} />}
+      />
     </Container>
   );
 };

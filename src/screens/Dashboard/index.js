@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Content} from './styles';
+import {Container} from './styles';
 import CustomHeader from '../../components/CustomHeader';
 import DashboardBox from '../../components/DashboardBox';
 import DashboardTasks from '../../components/DashboardTasks';
@@ -14,16 +14,14 @@ const projects = [
 const Dashboard = ({navigation}) => {
   return (
     <Container>
-      <Content>
-        <CustomHeader />
+      <CustomHeader />
 
-        <DashboardBox
-          title={'Projects'}
-          data={projects}
-          handleClik={() => navigation.navigate('Projects')}
-        />
-        <DashboardTasks title={'Working On'} data={projects} />
-      </Content>
+      <DashboardBox
+        title={'Projects'}
+        data={projects}
+        handleClik={() => navigation.navigate('Projects')}
+      />
+      <DashboardTasks title={'Working On'} data={projects} />
     </Container>
   );
 };
