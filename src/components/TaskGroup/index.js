@@ -1,7 +1,6 @@
 import React from 'react';
-import {FlatList} from 'react-native';
 
-import {Container, Title} from './styles';
+import {Container, Title, LoadMoreContainer, LoadMoreText} from './styles';
 import TaskListItem from '../TaskListItem';
 
 const tasks = [
@@ -18,6 +17,9 @@ const TaskGroup = ({title}) => {
       {tasks.map((item) => (
         <TaskListItem task={item} key={item.id} />
       ))}
+      <LoadMoreContainer>
+        <LoadMoreText>more...</LoadMoreText>
+      </LoadMoreContainer>
     </Container>
   );
 };
