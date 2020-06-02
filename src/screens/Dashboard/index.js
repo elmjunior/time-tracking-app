@@ -3,6 +3,7 @@ import React from 'react';
 import {Container, Content} from './styles';
 import CustomHeader from '../../components/CustomHeader';
 import DashboardBox from '../../components/DashboardBox';
+import DashboardTasks from '../../components/DashboardTasks';
 
 const projects = [
   {title: 'Lorem ipsum dolor auhd aishd iuah dsiauhd aiuhd'},
@@ -17,6 +18,7 @@ const Dashboard = () => {
         <CustomHeader />
 
         <DashboardBox title={'Projects'} data={projects} />
+        <DashboardTasks title={'Working On'} data={projects} />
       </Content>
     </Container>
   );
