@@ -9,7 +9,7 @@ export const TitleHolder = styled.View`
 
 export const Title = styled.Text`
   color: ${(props) => props.theme.colors.white};
-  font-size: 24px;
+  font-size: ${(props) => props.theme.sizes.title};
   font-weight: 600;
   flex: 1;
 `;

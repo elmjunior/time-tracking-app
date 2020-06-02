@@ -11,13 +11,17 @@ const projects = [
   {title: 'Lorem ipsum dolor'},
 ];
 
-const Dashboard = () => {
+const Dashboard = ({navigation}) => {
   return (
     <Container>
       <Content>
         <CustomHeader />
 
-        <DashboardBox title={'Projects'} data={projects} />
+        <DashboardBox
+          title={'Projects'}
+          data={projects}
+          handleClik={() => navigation.navigate('Projects')}
+        />
         <DashboardTasks title={'Working On'} data={projects} />
       </Content>
     </Container>

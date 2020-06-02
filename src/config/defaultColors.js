@@ -8,4 +8,7 @@ export default Object.freeze({
     transparentGray: 'rgba(255, 255, 255, 0.2)',
     yellow: '#FFF9D8',
   },
+  sizes: {
+    title: '24px',
+  },
 });
