@@ -1,10 +1,28 @@
 import React from 'react';
-import {View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import Main from './screens/Main';
+import SignUp from './screens/SignUp';
+import Dashboard from './screens/Dashboard';
+import Projects from './screens/Projects';
+import Project from './screens/Project';
+import TaskDetail from './screens/TaskDetail';
 
-// import { Container } from './styles';
+const Stack = createStackNavigator();
 
 const Navigator = () => {
-  return <View />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator headerMode={null}>
+        <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Projects" component={Projects} />
+        <Stack.Screen name="Project" component={Project} />
+        <Stack.Screen name="TaskDetail" component={TaskDetail} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
 export default Navigator;
