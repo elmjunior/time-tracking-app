@@ -4,10 +4,10 @@ import {Container, SafeAreaView, Icon, Content, Button, Label} from './styles';
 
 // eslint-disable-next-line no-extend-native
 String.prototype.toHHMMSS = function () {
-  var sec_num = parseInt(this, 10); // don't forget the second param
-  var hours = Math.floor(sec_num / 3600);
-  var minutes = Math.floor((sec_num - hours * 3600) / 60);
-  var seconds = sec_num - hours * 3600 - minutes * 60;
+  let sec_num = parseInt(this, 10);
+  let hours = Math.floor(sec_num / 3600);
+  let minutes = Math.floor((sec_num - hours * 3600) / 60);
+  let seconds = sec_num - hours * 3600 - minutes * 60;
 
   if (hours < 10) {
     hours = '0' + hours;
